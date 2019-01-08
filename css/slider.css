@@ -1,0 +1,58 @@
+.owl-carousel {
+    margin-bottom: 34px;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot{
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    margin: 0 20px;
+    border-radius: 20px;
+    border: solid 4px transparent;
+    outline: none;
+}
+
+.owl-dots{
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot.active{
+    border: solid 4px black;
+}
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    border: 1px white solid;
+    background-color: #d3d7d7;
+    width: 42px;
+    height: 42px;
+    transform: rotate(180deg);
+}
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 45%;
+    border: 1px white solid;
+    background-color: #d3d7d7;
+    width: 42px;
+    height: 42px;
+
+}
+.owl-prev:after,
+.owl-next:after {
+    font-family: 'Font Awesome 5 Free';
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+.owl-carousel .owl-nav button.owl-prev:after {
+    content: "\f104";
+}
+.owl-carousel .owl-nav button.owl-next:after {
+    content: "\f104";
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,  .owl-carousel .owl-nav button.owl-prev:hover {
+    background-color: #000;
+}

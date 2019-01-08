@@ -1,0 +1,232 @@
+@import 'owl.carousel.css';
+@import 'owl.theme.default.css';
+@import "slider.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+$nav_default_color: #777;
+$nav_button_font_family: 'Lato', sans-serif;
+$container: 1140px;
+
+@mixin header_menu() {
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-right: 4.6%;
+  font-size: 14px;
+  font-family: $nav_button_font_family;
+  color: $nav_default_color;
+  line-height: 35px;
+}
+
+@mixin header_menu_shadow() {
+  text-shadow: 0.1px 0 black;
+}
+
+header {
+  max-width: $container;
+  margin: auto;
+  div {
+    margin: 27px 20px;
+    a {
+      text-decoration: none;
+      position: relative;
+      img {
+        float: left;
+      }
+    }
+    form {
+      button {
+        border: none;
+        background: none;
+        @include header_menu();
+        float: right;
+        &:hover {
+          @include header_menu_shadow();
+        }
+      }
+    }
+    nav  {
+      ul {
+        li {
+          @include header_menu();
+          float: right;
+          a {
+            &:before {
+              content: "";
+              position: absolute;
+              display: block;
+              height: 1px;
+              width: 20px;
+              background-color: #06060a;
+              left: -30px;
+              top: 8px;
+              visibility: hidden;
+            }
+            &:hover {
+              @include header_menu_shadow();
+            }
+            &:hover:before {
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+    &:after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  h1 {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-35%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: white;
+    background-color: black;
+    z-index: 1;
+    line-height: 56px;
+    padding: 0 70px;
+    font-family: 'Roboto';
+    font-weight: lighter;
+    letter-spacing: 7px;
+  }
+  h2 {
+    z-index: 1;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-45%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 18px;
+    letter-spacing: 7px;
+  }
+}
+
+.bottom_menu {
+  max-width: $container;
+  margin: auto;
+  border-top: solid 1px #e0e0e0;
+  border-bottom: solid 1px #e0e0e0;
+  margin-bottom: 30px;
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      @include header_menu();
+      margin-right: 3%;
+      a {
+        line-height: 59px;
+        text-decoration: none;
+        display: block;
+        &:before {
+          content: '';
+          background-image: url(../images/line.png);
+          padding: 5px 20px 0 0;
+          background-repeat: no-repeat;
+        }
+      }
+      &:hover {
+        @include header_menu_shadow();
+      }
+      &:hover a:before {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.home {
+  margin: auto;
+  max-width: $container;
+  div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    div:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      a {
+        margin-bottom: 33px;
+      }
+    }
+    div:nth-child(2) {
+      display: flex;
+      margin: 0 30px;
+      flex-direction: column;
+      a {
+        margin-bottom: 33px;
+      }
+    }
+    div:nth-child(3) {
+      display: flex;
+      flex-direction: column;
+      a {
+        margin-bottom: 33px;
+      }
+    }
+  }
+  .home_bottom {
+    text-align: center;
+    a {
+      font-family: 'Roboto', sans-serif;
+      font-size: 13px;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 700;
+      background-color: #959595;
+      padding: 0 24px;
+      line-height: 30px;
+    }
+  }
+}
+
+
+footer {
+  margin: auto;
+  max-width: $container;
+  text-align: center;
+  color: $nav_default_color;
+    div:nth-child(1) {
+      margin: 64px 0 0;
+    }
+    div:nth-child(2) {
+      margin: 45px 0 37px;
+      border-top: solid 1px #e0e0e0;
+      border-bottom: solid 1px #e0e0e0;
+      a {
+        margin-right: 57px;
+        font-size: 14px;
+        line-height: 60px;
+      }
+    }
+    div:nth-child(3) {
+      margin-bottom: 46px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 13px;
+      span {
+        color: black;
+      }
+      text-transform: uppercase;
+    }
+}
+
+
