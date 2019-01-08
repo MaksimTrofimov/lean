@@ -181,4 +181,10 @@ footer {
     footer div:nth-child(3) span {
       color: black; }
 
+.about {
+  margin: auto;
+  text-align: center; }
+  .about .about_img_top {
+    max-width: 100%; }
+
 /*# sourceMappingURL=style_preproc.css.map */
