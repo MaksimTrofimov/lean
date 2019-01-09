@@ -11,13 +11,30 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto: 300,700|Lato:700" rel="stylesheet">
         <!--<link rel="stylesheet" href="css/owl.carousel.css">-->
         <!--<link rel="stylesheet" href="css/owl.theme.default.css">-->
+        <link rel="stylesheet" href="https:/code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="css/style_preproc.css">
         <link rel="stylesheet" href="css/media-queries.css">
 
 
         <script src="js/jquery-2.2.1.js"></script>
-        <script src="js/owl.carousel.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $( function() {
+                var handle = $( "#custom-handle .procent" );
+                $( "#slider" ).slider({
+                    create: function() {
+                        handle.text( $( this ).slider( "value" ) );
+                    },
+                    slide: function( event, ui ) {
+                        handle.text( ui.value + '%');
+                    }
+                });
+            } );
+        </script>
         <script src="js/script.js"></script>
+
+        <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
 
     <body>
         <header>
@@ -37,13 +54,25 @@
                 </nav>
             </div>
         </header>
-        <section class="about">
-            <div class="about_img_top">
-                <img src="images/about.png">
-            </div>
+        <div class="about_img_top">
+            <img src="images/about.png">
+        </div>
+        <section class="container about">
             <div>
-                
+                <img src="images/shutterstock.png">
+                <div>
+                    <h2>Our Story</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+                    <h2>our SKills</h2>
+                    <h3>Photoshop</h3>
+                    <div id="slider">
+                        <div id="custom-handle" class="ui-slider-handle"><div class="procent"></div></div>
+                    </div>
+
+                </div>
             </div>
+
         </section>
 
         <footer>

@@ -18,6 +18,21 @@
         <script src="js/jquery-2.2.1.js"></script>
         <script src="js/owl.carousel.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.owl-carousel').owlCarousel({
+                    loop:true,
+                    margin:0,
+                    nav:true,
+                    navText: ['', ''],
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                    }
+                })
+            });
+        </script>
 
     <body>
         <header>
@@ -60,7 +75,7 @@
             </nav>
         </div>
 
-        <section class="home">
+        <section class="container home">
             <div>
                 <div>
                     <a href="#"><img src="images/23.png"></a>
