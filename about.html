@@ -21,14 +21,17 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script>
             $( function() {
-                var handle = $( "#custom-handle .procent" );
-                $( "#slider" ).slider({
-                    create: function() {
-                        handle.text( $( this ).slider( "value" ) );
-                    },
-                    slide: function( event, ui ) {
-                        handle.text( ui.value + '%');
+                $(".slider").slider({
+                    create: function () {
+                        $( ".custom-handle .procent" ).text($(this).slider("value"));
                     }
+                });
+                $('.custom-handle').mousedown(function() {
+                    $(".slider").slider({
+                        slide: function (event, ui) {
+                            $('.procent', this).text(ui.value + '%');
+                        }
+                    });
                 });
             } );
         </script>
@@ -66,8 +69,20 @@
                         <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
                     <h2>our SKills</h2>
                     <h3>Photoshop</h3>
-                    <div id="slider">
-                        <div id="custom-handle" class="ui-slider-handle"><div class="procent"></div></div>
+                    <div class="slider">
+                        <div class="ui-slider-handle custom-handle"><div class="procent"></div></div>
+                    </div>
+                    <h3>Branding</h3>
+                    <div class="slider">
+                        <div class="ui-slider-handle custom-handle"><div class="procent"></div></div>
+                    </div>
+                    <h3>Photography</h3>
+                    <div class="slider">
+                        <div class="ui-slider-handle custom-handle"><div class="procent"></div></div>
+                    </div>
+                    <h3>Web Design</h3>
+                    <div class="slider">
+                        <div class="ui-slider-handle custom-handle"><div class="procent"></div></div>
                     </div>
 
                 </div>
