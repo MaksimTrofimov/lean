@@ -21,9 +21,15 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script>
             $( function() {
+                var i = '0';
+                var procent = ['90','95','50','85'];
                 $(".slider").slider({
                     create: function () {
-                        $( ".custom-handle .procent" ).text($(this).slider("value"));
+                        $(this).each(function(){
+                            $(this).slider("value", procent[i]);
+                            $('.custom-handle .procent', this).text(procent[i]+'%');
+                            i++;
+                        });
                     }
                 });
                 $('.custom-handle').mousedown(function() {
