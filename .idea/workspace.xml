@@ -4,6 +4,9 @@
     <list default="true" id="5d6af054-ccf6-45e2-9c80-2de466e8c793" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style_preproc.css" afterPath="$PROJECT_DIR$/css/style_preproc.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style_preproc.css.map" afterPath="$PROJECT_DIR$/css/style_preproc.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style_preproc.scss" afterPath="$PROJECT_DIR$/css/style_preproc.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,21 +18,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+            <state relative-caret-position="342">
+              <caret line="124" column="32" lean-forward="false" selection-start-line="122" selection-start-column="24" selection-end-line="124" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style_preproc.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style_preproc.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style_preproc.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="274" column="19" lean-forward="true" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
+            <state relative-caret-position="288">
+              <caret line="344" column="30" lean-forward="false" selection-start-line="344" selection-start-column="30" selection-end-line="344" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -38,19 +41,18 @@
       <file leaf-file-name="style_preproc.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style_preproc.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="-6555">
+              <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding>
+                <marker date="1547330515069" expanded="true" signature="6994:7032" ph="{...}" />
+                <marker date="1547330515069" expanded="true" signature="7079:7168" ph="{...}" />
+                <marker date="1547330515069" expanded="true" signature="7215:7298" ph="{...}" />
+                <marker date="1547330515069" expanded="true" signature="7433:7458" ph="{...}" />
+                <marker date="1547330515069" expanded="true" signature="7489:7550" ph="{...}" />
+                <marker date="1547330515069" expanded="true" signature="7581:7613" ph="{...}" />
+                <marker date="1547330515069" expanded="true" signature="7655:7686" ph="{...}" />
+                <marker date="1547330515069" expanded="true" signature="7876:7895" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,6 +63,12 @@
     <findStrings>
       <find>custom-handle2</find>
       <find>custom-handle</find>
+      <find>Roboto</find>
+      <find>pers</find>
+      <find>about_img_top</find>
+      <find>robot</find>
+      <find>about_person_text</find>
+      <find>font</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,8 +78,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/css/style_preproc.scss" />
+        <option value="$PROJECT_DIR$/css/style_preproc.css" />
         <option value="$PROJECT_DIR$/about.html" />
+        <option value="$PROJECT_DIR$/css/style_preproc.scss" />
       </list>
     </option>
   </component>
@@ -193,12 +202,12 @@
       <option name="presentableId" value="Default" />
       <updated>1547237529961</updated>
       <workItem from="1547237532773" duration="9863000" />
-      <workItem from="1547310318898" duration="5284000" />
+      <workItem from="1547310318898" duration="16120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15147000" />
+    <option name="totallyTimeSpent" value="25983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -246,7 +255,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1547330515069" expanded="true" signature="6994:7032" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7079:7168" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7215:7298" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7433:7458" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7489:7550" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7581:7613" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7655:7686" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7876:7895" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -283,24 +301,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style_preproc.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-6555">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <marker date="1547330515069" expanded="true" signature="6994:7032" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7079:7168" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7215:7298" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7433:7458" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7489:7550" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7581:7613" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7655:7686" ph="{...}" />
+            <marker date="1547330515069" expanded="true" signature="7876:7895" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="124" column="32" lean-forward="false" selection-start-line="122" selection-start-column="24" selection-end-line="124" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style_preproc.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="274" column="19" lean-forward="true" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+        <state relative-caret-position="288">
+          <caret line="344" column="30" lean-forward="false" selection-start-line="344" selection-start-column="30" selection-end-line="344" selection-end-column="30" />
           <folding />
         </state>
       </provider>

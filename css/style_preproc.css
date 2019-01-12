@@ -74,7 +74,7 @@ header {
     z-index: 1;
     line-height: 56px;
     padding: 0 70px;
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
     font-weight: lighter;
     letter-spacing: 7px; }
   .slider h2 {
@@ -85,7 +85,7 @@ header {
     transform: translate(-45%, -50%);
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
     font-weight: lighter;
     font-size: 18px;
     letter-spacing: 7px; }
@@ -122,9 +122,15 @@ header {
       .bottom_menu ul li:hover a:before {
         visibility: hidden; }
 
+.background_color {
+  background-color: #fafafa;
+  padding-top: 67px;
+  padding-bottom: 75px; }
+
 .container {
   margin: auto;
-  max-width: 1140px; }
+  max-width: 1140px;
+  background-color: #fafafa; }
 
 .home div:first-of-type {
   display: flex;
@@ -148,7 +154,7 @@ header {
 .home .home_bottom {
   text-align: center; }
   .home .home_bottom a {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 13px;
     color: white;
     text-decoration: none;
@@ -176,47 +182,49 @@ footer {
       line-height: 60px; }
   footer div:nth-child(3) {
     margin-bottom: 46px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 13px;
     text-transform: uppercase; }
     footer div:nth-child(3) span {
       color: black; }
 
 .about_img_top {
-  max-width: 100%;
-  text-align: center;
-  margin-bottom: 71px; }
+  max-width: 1600px;
+  margin: auto; }
+  .about_img_top img {
+    max-width: 100%; }
 
-.about div:nth-child(1) {
+.about .about_block_slider {
   display: flex;
-  flex-direction: row; }
-  .about div:nth-child(1) img {
+  flex-direction: row;
+  margin-bottom: 67px; }
+  .about .about_block_slider img {
     margin-right: 53px; }
-  .about div:nth-child(1) div {
+  .about .about_block_slider div {
     font-family: 'Roboto', sans-serif; }
-    .about div:nth-child(1) div p {
+    .about .about_block_slider div p {
       line-height: 30px;
       font-size: 14px;
       margin-bottom: 28px;
       color: #777; }
-    .about div:nth-child(1) div h2 {
+    .about .about_block_slider div h2 {
       font-size: 18px;
       text-transform: uppercase;
       margin-bottom: 35px;
       letter-spacing: 7px;
       color: #777; }
-    .about div:nth-child(1) div h3 {
+    .about .about_block_slider div h3 {
       font-size: 16px;
       font-weight: 700;
       color: #777;
       margin-bottom: 7px; }
-    .about div:nth-child(1) div .slider {
+    .about .about_block_slider div .slider {
       margin-bottom: 24px; }
-    .about div:nth-child(1) div div .custom-handle {
+    .about .about_block_slider div div .custom-handle {
       border-radius: 15px !important;
       background-color: white !important;
       border: 4px solid black !important; }
-      .about div:nth-child(1) div div .custom-handle:after {
+      .about .about_block_slider div div .custom-handle:after {
         content: '';
         border: 11px solid transparent;
         border-bottom: 7px solid transparent;
@@ -224,12 +232,51 @@ footer {
         border-left: 7px solid black;
         position: absolute;
         top: -23px; }
-      .about div:nth-child(1) div div .custom-handle .procent {
+      .about .about_block_slider div div .custom-handle .procent {
         position: absolute;
         top: -38px;
         background-color: black;
         font-size: 12px;
         padding: 6px 10px; }
+.about .about_team {
+  margin-bottom: 67px; }
+  .about .about_team div {
+    text-align: center;
+    max-width: 615px;
+    margin: auto;
+    font-family: "Roboto", sans-serif; }
+    .about .about_team div h2 {
+      font-size: 30px;
+      line-height: 90px;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 12px; }
+    .about .about_team div p {
+      font-size: 14px;
+      line-height: 30px;
+      color: #777; }
+
+.about_person {
+  display: flex;
+  flex-direction: row; }
+  .about_person div {
+    background-color: white;
+    font-family: "Roboto", sans-serif; }
+    .about_person div .about_person_text {
+      padding: 35px 15px 30px 5px; }
+      .about_person div .about_person_text h3 {
+        font-size: 24px;
+        font-weight: 300;
+        text-transform: uppercase; }
+      .about_person div .about_person_text h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px; }
+      .about_person div .about_person_text p {
+        font-size: 14px;
+        line-height: 23px; }
+  .about_person div:nth-child(2) {
+    margin: 0px 30px; }
 
 .ui-widget.ui-widget-content {
   border: 1px solid #c5c5c5;
